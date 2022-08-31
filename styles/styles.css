@@ -64,7 +64,13 @@ img {
 }
 
 body {
-    font-family: 'Roboto', sans-seerif; font-size: 16px; letter-spacing:0.03em; color: var(--text-color);
+    font-family: 'Roboto', sans-seerif;
+    font-size: 16px; 
+    letter-spacing:0.03em; 
+    color: var(--text-color);
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+
 }
 
 .logo {
@@ -82,7 +88,9 @@ body {
     color: var(--title-color);
     }
 
-.page-header {
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 }
 
