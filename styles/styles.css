@@ -17,9 +17,21 @@ img {
     display: block;
 }
 
+.page-header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+}
+.page-header > * {
+    flex: 1;
+}
+
 .container {
     width: 1200px;
-    padding: 0 15px;
+    padding: 0px 15px;
     margin-left: auto;
     margin-right: auto;
 
@@ -38,6 +50,12 @@ img {
 
 .list-kontact {
     list-style: none;
+    display: flex;
+}
+
+.list-kontact li {
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .list-kontact a {
@@ -90,12 +108,6 @@ body {
     color: var(--title-color);
     }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-}
-
 .page-navigation {
     font-family: 'Roboto';
     font-style: normal;
@@ -113,6 +125,10 @@ body {
 }
 .page-navigation a:focus {
     color: var(--title-color);
+}
+.page-navigation li {
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 
@@ -172,6 +188,12 @@ button:focus {
 .hero {
     background: #2F303A;
     text-align: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.hero h1 {
+    margin-bottom: 24px;
 }
 
 .feature-title {
@@ -269,6 +291,7 @@ h1 {
     letter-spacing: 0.03em;
     background: #2F303A;
     color: white;
+    padding: 12px
 }
 
 .footer-contacts-li a {
@@ -279,6 +302,11 @@ h1 {
 }
 .footer-contacts-li a:focus {
     color: var(--accent-color);
+}
+.list-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 address {
@@ -295,13 +323,19 @@ address {
     flex-wrap: wrap;
 }
 
+.list-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
 .picture {
     padding: 20px 24px;
-    border-left: 24px;
-    border-bottom: 20px;
-    border-right: 24px;
-    
-
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-container li {
@@ -318,6 +352,17 @@ address {
 }
 .portfolio-item:nth-last-child(-n + 3) { 
      margin-bottom: 0;
+}
+
+.team-list li {
+    width: calc((100% - 30px) / 4);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-total {
