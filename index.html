@@ -13,29 +13,31 @@
 </head>
 <body>
     <header class="page-header">
-        <a class="logo" href="/"><span class="logo-accent">Web</span><span class="logo-dark">Studio</span></a>            
-        <nav class="page-navigation">
-            <ul class="list">
-                <li>
-                    <a class="link" href="./index.html">Студія</a>
+        <div class="container header-box">
+            <a class="logo" href="/"><span class="logo-accent">Web</span><span class="logo-dark">Studio</span></a>            
+            <nav class="page-navigation">
+                <ul class="list nav-list">
+                    <li>
+                        <a class="link" href="./index.html">Студія</a>
+                    </li>
+                    <li>
+                        <a class="link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="list-kontact">
+                <li class="contacts-li">
+                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li>
-                    <a class="link" href="./portfolio.html">Портфоліо</a>
-                </li>
-                <li>
-                    <a class="link" href="/">Контакти</a>
+                <li class="contacts-li">
+                    <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-
-        <ul class="list-kontact">
-            <li class="contacts-li">
-                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="contacts-li">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
+        </div>
     </header>
 
 
@@ -43,7 +45,7 @@
         <!-- 1 -->
         <section class="hero">
             <div class="container">
-                    <h1 class="hero-h1">Ефективні рішення<br/>для вашого бізнесу</h1>
+                    <h1 class="hero-h1">Ефективні рішення для вашого бізнесу</h1>
                     <button class="hero-button" type="button">Замовити послугу</button>
             </div> 
         </section>
@@ -52,7 +54,7 @@
                 <section class="section feature">
                     <div class="container">
                         <h2 class="title visually-hidden">ВІРТЕ У СЕБЕ</h2>
-                        <ul class="list">
+                        <ul class="list feature-list">
                             <li class="feature-item">
                                 <h3 class="feature-title">
                                     УВАГА ДО ДЕТАЛЕЙ
@@ -91,20 +93,20 @@
          
 
         <!-- 3 -->
-        <section class="section">
+        <section class="section about">
             <div class="container">
                     <h2 class="title">
                         Чим ми займаємося
                     </h2>
 
-                    <ul class="list">
-                        <li class="link-item">
+                    <ul class="list about-list">
+                        <li>
                             <img src="images/box_1.jpg" alt="Service 1" width="370" />
                         </li>
-                        <li class="link-item">
+                        <li>
                             <img src="images/box_2.jpg" alt="Service 2" width="370" />
                         </li>
-                        <li class="link-item">
+                        <li>
                             <img src="images/box_3.jpg" alt="Service 3" width="370" />
                         </li>
                     </ul>
@@ -121,32 +123,34 @@
                     <ul class="list team-list">
                         <li>
                             <img src="images/img.jpg" alt="men 1" width="270" />
-                            <h3 class="team-title">
-                                Ігор Дем'яненко
-                            </h3>
-                            <p class="team-text">
-                                Product Designer
-                            </p>
-                        </li>
+                            <div class="team-humen">
+                                    <h3 class="team-title">
+                                        Ігор Дем'яненко
+                                    </h3>
+                                    <p class="team-text">
+                                        Product Designer
+                                    </p>
+                                </li>
 
-                        <li>
-                            <img src="images/img1.jpg" alt="woman 2" width="270" />
-                            <h3 class="team-title">
-                                Ольга Рєпіна
-                            </h3>
-                            <p class="team-text">
-                                Frontend Developer
-                            </p>
-                        </li>
+                                <li>
+                                    <img src="images/img1.jpg" alt="woman 2" width="270" />
+                                    <h3 class="team-title">
+                                        Ольга Рєпіна
+                                    </h3>
+                                    <p class="team-text">
+                                        Frontend Developer
+                                    </p>
+                                </li>
 
-                        <li>
-                            <img src="images/img2.jpg" alt="man 3" width="270" />
-                            <h3 class="team-title">
-                                Микола Тарасов
-                            </h3>
-                            <p class="team-text">
-                                Marketing
-                            </p>
+                                <li>
+                                    <img src="images/img2.jpg" alt="man 3" width="270" />
+                                    <h3 class="team-title">
+                                        Микола Тарасов
+                                    </h3>
+                                    <p class="team-text">
+                                        Marketing
+                                    </p>
+                            </div>        
                         </li>
 
                         <li>
@@ -165,17 +169,19 @@
 
     
     <footer class="footer">
-        <a class="logo" href="/"><span class="logo-accent">Web</span><span class="logo-light">Studio</span></a>
+        <div class="container">
+            <a class="logo" href="/"><span class="logo-accent">Web</span><span class="logo-light">Studio</span></a>
 
-        <ul class="list-footer">
-            <li>
-                <address>
-                    м. Київ, пр-т Лесі Українки, 26
-                </address>
-            </li>
-            <li class="footer-contacts-li"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="footer-contacts-li"><a class="link" href="tel:+380961111111">+380961111111</a></li>
-        </ul>
+            <ul class="list-footer">
+                <li>
+                    <address>
+                        м. Київ, пр-т Лесі Українки, 26
+                    </address>
+                </li>
+                <li class="footer-contacts-li"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="footer-contacts-li"><a class="link" href="tel:+380961111111">+380961111111</a></li>
+            </ul>
+        </div>    
     </footer>
 </body>
 </html>
